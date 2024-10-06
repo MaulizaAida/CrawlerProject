@@ -187,5 +187,6 @@ def main():
     if all_data:
         save_to_sqlite(all_data)
 
+
 if __name__ == "__main__":
     main()
