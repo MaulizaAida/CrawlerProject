@@ -181,7 +181,7 @@ def main():
         for product in tqdm(products_to_search, desc=f"Processing in {city}"):
             response = fetch_data(product, user_lat, user_long)  # Pass latitude and longitude
             if response:
-                extracted_data = extract_data(response, product, city)  # Pass the city name here
+                extracted_data = extract_data(response, product, city)  # Pass the city name here.
                 all_data.extend(extracted_data)
 
     if all_data:
